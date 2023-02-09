@@ -13,6 +13,6 @@ public interface RoleRepository extends CrudRepository<Role, Integer> {
 
     Optional<Role> findByName(String name);
 
-    List<Role> findAllByOrderIdDesc();
+    List<Role> findAllByOrderByIdDesc();
 
 }
